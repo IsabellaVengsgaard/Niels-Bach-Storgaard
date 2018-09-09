@@ -1,0 +1,547 @@
+ /** file: style.css **/
+
+ body {
+ 	font-family: 'Dosis', sans-serif;
+ 	@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+ }
+
+
+ p {
+ 	position: static;
+ }
+
+ h2 {
+ 	font-size: 20px;
+ 	text-align: center;
+ 	position: static;
+
+ }
+
+ #video-container {
+
+ 	max-height: 700px;
+ 	max-width: 100%;
+
+ }
+
+ #trappe-video {
+ 	max-height: 700px;
+ 	position: absolute;
+ 	width: 100%;
+
+
+ }
+
+ #overskrift {
+ 	position: relative;
+ 	color: white;
+ 	font-family: Bernard MT Condensed;
+ 	font-size: 15px;
+ 	z-index: 2;
+ 	letter-spacing: 3px;
+ 	margin-left: 26%;
+
+
+ }
+
+ #underskrift {
+ 	width: 150px;
+ 	height: 4%;
+ 	z-index: 1;
+ 	position: relative;
+ 	padding-top: 20%;
+ 	padding-left: 30%;
+
+ }
+
+
+ #afsnit {
+ 	margin-top: 80px;
+ 	position: static;
+
+ }
+
+ #etafsnit {
+ 	position: static;
+ 	margin-top: 15%;
+ 	margin-bottom: 15%;
+
+ 	max-height: 20%;
+ }
+
+ #doc {
+
+ 	position: relative;
+ 	width: 100%;
+ 	height: auto;
+ }
+
+ #musicNiels {
+ 	/** navigation musik **/
+ 	background-color: #f1f3f4;
+ 	padding-top: 10px;
+
+ }
+
+
+
+ #skullMusic {
+ 	max-width: 100%;
+ 	background-color: #f1f3f4;
+ 	text-align: center;
+ 	margin-top: 50px;
+ 	margin-bottom: 30px;
+ }
+
+
+ #skull {
+ 	max-width: 100%;
+ }
+
+
+ #citat {
+ 	/** citat animation **/
+ 	width: 300px;
+ 	position: absolute;
+ 	margin-top: 10px;
+
+
+ }
+
+ #citat {
+ 	position: absolute;
+ 	left: -300px;
+ 	width: 300px;
+ 	height: auto;
+ 	background: blue;
+ 	-webkit-animation: slide 2s backwards infinite;
+ 	-webkit-animation-delay: 10s;
+ 	animation: slide 10s backwards infinite;
+ 	animation-delay: 5s;
+ }
+
+ @-webkit-keyframes slide {
+ 	100% {
+ 		left: 0;
+ 	}
+ }
+
+ @keyframes slide {
+ 	0% {
+ 		left: -300px;
+ 	}
+ 	50% {
+ 		left: 30px;
+ 	}
+ 	100% {
+ 		left: -300;
+ 	}
+ }
+
+
+ #niels {
+ 	width: 100%;
+ 	overflow-x: hidden;
+ 	margin: 0 auto;
+ 	margin-top: 5%;
+
+ }
+
+ .container-niels {
+ 	margin-left: 100px;
+ 	margin-right: 100px;
+ }
+
+
+ #niels {
+ 	/**Ken Burns effect **/
+ 	width: 100%;
+ 	overflow-x: hidden;
+ 	transition: all 20s ease-in;
+ }
+
+
+ #niels:hover {
+ 	width: 1300px;
+
+ }
+
+
+ #citat-tekst {
+ 	font-size: 25px;
+ 	font-family: 'Dosis', sans-serif;
+
+ }
+
+ #guitar {
+ 	max-width: 100%;
+ 	min-height: 100%;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: center;
+ 	position: static;
+
+
+ }
+
+
+ .vid-info {
+ 	/** ramme omkring guitar **/
+ 	position: relative;
+ 	z-index: 1;
+ 	top: 0;
+ 	right: 0;
+
+ 	background: rgba(189, 176, 174);
+ 	color: #fff;
+ 	padding: 1rem;
+ 	font-family: Avenir, Helvetica, sans-serif;
+ 	text-align: center;
+ 	max-width: 100%;
+
+
+ }
+
+
+ #noder {
+ 	max-width: 100%;
+
+ }
+
+
+ #underline {
+ 	display: block;
+ 	margin-top: 0.5em;
+ 	margin-bottom: 0.5em;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	border-style: inset;
+ 	border-width: 1px;
+ 	border-bottom-color: black;
+
+ }
+
+ #underskrift-sort {
+ 	width: 130px;
+ }
+
+ #mail {
+ 	text-decoration: none;
+ 	color: black;
+
+
+ }
+
+ #tel {
+ 	text-decoration: none;
+ 	color: black;
+
+ }
+
+ footer {
+ 	font-size: 15px;
+ 	margin: 0 15px 0;
+ }
+
+
+ section {
+ 	width: 70%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	font-size: 15px;
+ }
+
+ @media only screen and (min-width:400px) {
+
+ 	#afsnit {
+ 		margin-top: 110px;
+ 		position: static;
+ 	}
+
+ 	#overskrift {
+ 		position: relative;
+ 		color: white;
+ 		font-family: Bernard MT Condensed;
+ 		font-size: 15px;
+ 		z-index: 2;
+ 		letter-spacing: 3px;
+ 		margin-left: 26%;
+
+
+ 	}
+
+ 	#underskrift {
+ 		width: 160px;
+ 		height: 4%;
+ 		z-index: 1;
+ 		position: relative;
+ 		padding-top: 20%;
+ 		padding-left: 30%;
+
+ 	}
+
+ 	section {
+ 		width: 70%;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		font-size: 20px;
+ 	}
+ }
+
+ @media only screen and (min-width:450px) {
+
+ 	#afsnit {
+ 		margin-top: 140px;
+ 		position: static;
+
+ 	}
+
+
+ 	#overskrift {
+ 		position: relative;
+ 		color: white;
+ 		font-family: Bernard MT Condensed;
+ 		font-size: 23px;
+ 		z-index: 2;
+ 		letter-spacing: 3px;
+ 		margin-left: 26%;
+
+
+ 	}
+
+ 	#underskrift {
+ 		width: 180px;
+ 		height: 4%;
+ 		z-index: 1;
+ 		position: relative;
+ 		padding-top: 20%;
+ 		padding-left: 30%;
+
+ 	}
+
+ 	section {
+ 		width: 70%;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		font-size: 20px;
+ 	}
+ }
+
+
+ @media only screen and (min-width: 600px) {
+
+
+ 	#afsnit {
+ 		margin-top: 140px;
+ 		position: static;
+
+ 	}
+ 	#etafsnit {
+ 		padding-top: ;
+ 	}
+
+
+ 	#overskrift {
+ 		position: relative;
+ 		color: white;
+ 		font-family: Bernard MT Condensed;
+ 		font-size: 26px;
+ 		z-index: 2;
+ 		letter-spacing: 3px;
+ 		margin-left: 26%;
+
+
+ 	}
+
+ 	#underskrift {
+ 		width: 200px;
+ 		height: 4%;
+ 		z-index: 1;
+ 		position: relative;
+ 		padding-top: 20%;
+ 		padding-left: 30%;
+
+ 	}
+
+ 	section {
+ 		width: 70%;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		font-size: 20px;
+ 	}
+ }
+
+
+ @media only screen and (min-width: 700px) {
+ 	#afsnit {
+ 		margin-top: 170px;
+ 		position: static;
+
+ 	}
+ 	#overskrift {
+ 		position: relative;
+ 		color: white;
+ 		font-family: Bernard MT Condensed;
+ 		font-size: 30px;
+ 		z-index: 2;
+ 		letter-spacing: 3px;
+ 		margin-left: 26%;
+
+
+ 	}
+
+ 	#underskrift {
+ 		width: 250px;
+ 		height: 4%;
+ 		z-index: 1;
+ 		position: relative;
+ 		padding-top: 20%;
+ 		padding-left: 30%;
+
+ 	}
+
+ 	section {
+ 		width: 70%;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		font-size: 20px;
+ 	}
+
+
+ }
+
+ @media only screen and (min-width: 800px) {
+
+ 	#afsnit {
+ 		padding: -top: 30px;
+ 		padding-bottom: 50px position: static;
+
+ 	}
+
+ 	#overskrift {
+ 		position: relative;
+ 		color: white;
+ 		font-family: Bernard MT Condensed;
+ 		font-size: 36px;
+ 		z-index: 2;
+ 		letter-spacing: 3px;
+ 		margin-left: 30%;
+
+
+
+ 	}
+
+ 	#underskrift {
+ 		width: 280px;
+ 		height: 8%;
+ 		z-index: 1;
+ 		position: relative;
+ 		padding-top: 20%;
+ 		padding-left: 30%;
+
+ 	}
+
+
+ 	section {
+ 		width: 70%;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		font-size: 20px;
+ 	}
+ }
+
+
+ @media only screen and (min-width: 900px) {
+
+ 	#afsnit {
+ 		padding-top: 50px;
+ 		margin-top: px;
+ 		position: static;
+
+ 		padding-bottom:
+ 	}
+ 	#etafsnit {
+ 		position: static;
+ 		margin-top: 15%;
+ 		margin-bottom: 15%;
+ 		margin: 0 20% 0 20%;
+ 		max-height: 20%;
+
+
+ 	}
+
+ 	section {
+ 		width: 70%;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		font-size: 20px;
+ 	}
+ 	#guitar {
+ 		max-width: 100%;
+ 		min-height: 100%;
+ 		display: flex;
+ 		flex-direction: row;
+ 		justify-content: center;
+ 		position: static;
+ 		padding-left: 10%
+ 	}
+
+ 	@media only screen and (min-width: 1000px) {
+ 		#afsnit {
+
+ 			position: static;
+ 			padding-top: 140px;
+ 			padding-bottom: 50px;
+
+
+ 		}
+ 		#etafsnit {
+ 			padding-top: 20px;
+ 			padding-bottom: 20px;
+ 		}
+
+
+ 		#toafsnit {
+ 			padding-top: 20px;
+
+
+
+ 		}
+
+ 		#treafsnit {
+ 			padding-bottom: 20px;
+ 			padding-top: 20px;
+
+
+ 		}
+
+ 		h2 {
+ 			text-align: center;
+ 			font-size: 26px;
+ 		}
+
+ 		section {
+ 			width: 70%;
+ 			margin-left: auto;
+ 			margin-right: auto;
+ 			font-size: 20px;
+ 		}
+ 		h3 {
+ 			font-size: 18px;
+ 		}
+ 		footer p {
+ 			font-size: 15px;
+ 		}
+ 		#guitar {
+ 			max-width: 100%;
+ 			min-height: 100%;
+ 			display: flex;
+ 			flex-direction: row;
+ 			justify-content: center;
+ 			position: static;
+ 			padding-left: 17%
+ 		}
+ 		#treafsnit {}
+
+ 	}
