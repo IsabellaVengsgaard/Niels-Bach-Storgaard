@@ -1,10 +1,30 @@
+'use strict';
+/**
+* file: isVideoVisibleOrNot.html
+* purpose: Er min video synlig nu?
+**/
 
-var figure = $("#doc").hover( hoverVideo, hideVideo );
+// scroll-eventlistener
+window.addEventListener("scroll", function() {
+console.log('scroll ...'); // test
 
-function hoverVideo(e) {  
-    $('doc', this).get(0).play(); 
+// hvis erJegHer er synlig, så ...
+if (elFllVsbl(videoDoc)) {
+console.log(elFllVsbl(videoDoc)); // test
+
+if (!(doc.curentTime > 0)) {
+doc.load(); // load the video
+doc.play(); // play audio
 }
+} else {
+console.log(elFllVsbl(videoDoc)); // test
+doc.pause();
+doc.currentTime = 0; // rewind the sound
+}
+})
 
-function hideVideo(e) {
-    $('doc', this).get(0).pause(); 
+// funktionen tester om videoen er synlig
+// og returnerer true eller false
+function elFllVsbl(el) {
+return (el.getBoundingClientRect().top >= 0 && el.getBoundingClientRect().bottom < window.innerHeight);
 }
